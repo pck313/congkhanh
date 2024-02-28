@@ -19,9 +19,20 @@ int main(int argc, char* argv[])
     alex.x = 100;
     alex.y = 101;
 
+    Monster ben;      // thêm một biến ben kiểu Monster
+    ben.name = "Ben";
+    ben.x = 300;
+    ben.y = 400;
+
     alex.moveNorth();       //gọi hàm của alex
 				     // đọc giá trị các trường của alex
-    cout << alex.name << " is at (" << alex.x << "," << alex.y << ")";
+    cout << alex.name << " is at (" << alex.x << "," << alex.y << ")"<<endl;
+    cout << ben.name << " is at (" << ben.x << "," << ben.y << ")"<<endl;
+
+    ben = alex;
+
+    cout<<"alex.name: "<<alex.name<<"  alex.x: "<<alex.x<<"  alex.y: "<<alex.y<<endl;
+    cout<<"ben.name: "<<ben.name<<"  ben.x: "<<ben.x<<"  ben.y: "<<ben.y<<endl;
 
     return 0;
 }
