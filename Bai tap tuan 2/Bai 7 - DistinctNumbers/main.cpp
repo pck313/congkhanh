@@ -13,7 +13,8 @@ int main()
     int n, m;
     cin >> n;
     cout << n << " ";
-    while (m > 0)
+
+        while (m > 0 && n > 0)
     {
         cin >> m;
         if (m != n)
